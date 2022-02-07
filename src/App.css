@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+:root{
+  --white-color:#fff;
+  --black-color:#000;
+  --head-text-color:#555555;
+  --heading-color:#212B36;
+  --android-color:#005249;
+  --text-color:#637381;
+
+}
+html{
+  font-family: "Public Sans", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+}
+ul{
+  padding-left: 0;
+}
+.android{
+  background-color: #c8facd; 
+  color: var(--android-color);
+}
+.apple{
+  background-color: #d0f2ff;
+  color: #04297a;
+}
+.window{
+  background-color: #fff7cd;
+  color: #7a4f01;
+
+}
+.bug{
+  background-color: #ffe7d9;
+  color: #7a0c2e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bor-shaw{
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#chart-line, #charts-line-in ,#charts-column-in,#chart-column 
+,#charts-pie,#charts-scatter{
+  padding:20px 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#charts-pie{
+  align-self: center;
+}
+.heading__name{
+  font-size:1.5rem;
+  color:var(--heading-color);
 }
 
-.App-link {
-  color: #61dafb;
+.success{
+  background-color: #198754;
+}
+.danger{
+  background-color: #dc3545;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* input[type="checkbox"]{
+  visibility:hidden;
+} */
+
+.btn-success{
+  width: 100%;
+  height: 48px;
+  background: #00ab55;
+  border-color: #00ab55;
+  border-radius: 8px;
+  color:var(--white-color);
+  border:none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.btn-success:hover{
+  background-color: #157347;
+  border-color: #146c43;
 }
